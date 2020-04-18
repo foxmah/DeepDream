@@ -1,6 +1,7 @@
+<!doctype html>
 <link href="../static/upload.css" rel="stylesheet"></link>
-<form action="/" method="POST">
-    <input type="file" multiple>
+<form method=post enctype=multipart/form-data>
+    <input type="file" name=file>
     <p>Drag your files here or click in this area.</p>
-    <button type="submit">Upload</button>
+    <button type="submit" value=Upload>Upload</button>
   </form>
