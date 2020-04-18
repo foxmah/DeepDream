@@ -1,0 +1,1 @@
+ is simple and easy to use PHP script for sending the data submitted by web HTML forms (like contact forms) to your email inbox. The librar
