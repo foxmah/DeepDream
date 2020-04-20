@@ -40,7 +40,10 @@ def processing(filename):
     img_result = np.clip(img_result, 0.0, 255.0)
     img_result = img_result.astype(np.uint8)
     result = PIL.Image.fromarray(img_result, mode='RGB')
-    result.save(f'{filename}_out.jpg')
+    filename = filename.split(".")
+    filename = str(filename[0]) + "_out." + str(filename[1])
+    result.save(f'{filename}')
+    print("filename: " , filename)
     #result.show()
 
 
