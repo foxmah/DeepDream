@@ -1,3 +1,7 @@
+"devDependencies": {
+  "minimist": ">=1.2.3"
+}
+
 {
     "title": "Resume",
     "name": "startbootstrap-resume",
