@@ -3,14 +3,14 @@ from flask import Flask, flash, request, redirect, url_for , render_template , s
 from werkzeug.utils import secure_filename
 from dream_image import processing
 
-UPLOAD_FOLDER = 'uploads/'
+UPLOAD_FOLDER = 'static/assets/uploads/'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 app = Flask(__name__)
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024
-
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 @app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template("index.html")
@@ -35,15 +35,16 @@ def upload_file():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            return redirect(url_for('uploaded_file'))
+            return redirect(url_for('uploaded_file'  , filename=filename))
     return render_template("upload.html")
 
-@app.route('/templates/')
-def uploaded_file():
-    Path = os.path.join(app.config['UPLOAD_FOLDER'],)
-    #processing(str(Path))
-    return "your image will be processed"
-    #return redirect(url_for('upload_file'))
+@app.route('/templates/<filename>')
+def uploaded_file(filename):
+    Path = os.path.join(app.config['UPLOAD_FOLDER'] , filename)
+    processing(str(Path))
+    Path = Path.split(".")
+    Path = str(Path[0]) + "_out." + str(Path[1])
+    return render_template("show_uploaded_file.html" , path=Path)
 
 if __name__ == "__main__":
     app.run("0.0.0.0", 5000, debug=True)

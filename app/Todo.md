@@ -1,0 +1,2 @@
+- [ ] redirect after processing image
+- [ ] put right picture
