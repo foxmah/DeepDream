@@ -1,2 +1,4 @@
 - [ ] redirect after processing image
-- [ ] put right picture
+- [X] put right picture
+- [ ] add contect us
+- [ ] Add gallery

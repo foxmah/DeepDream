@@ -5,12 +5,21 @@ from dream_image import processing
 
 UPLOAD_FOLDER = 'static/assets/uploads/'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+counter = 0
 
 app = Flask(__name__)
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+
+def name_a_file(filename):
+    filename = filename.split(".")
+    global counter
+    filename = str(counter) + "." + str(filename[1])
+    counter+=1
+    return filename
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template("index.html")
@@ -34,6 +43,7 @@ def upload_file():
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
+            filename = name_a_file(filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             return redirect(url_for('uploaded_file'  , filename=filename))
     return render_template("upload.html")
