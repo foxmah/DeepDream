@@ -590,7 +590,7 @@ section {
   position: relative;
   overflow: hidden;
   margin: 0;
-  background: rgb(200, 193, 193);
+  background: rgb(0, 0, 0);
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
   text-align: center;
@@ -614,29 +614,17 @@ section {
 }
 
 .services .title a {
-  color: #111;
+  font-size: 19px;
+  color: rgb(25, 250, 194);
+  text-align: center;
 }
 
 .services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-
-.services .icon-box-pink .icon i {
-  color: #ff689b;
-}
-
-.services .icon-box-cyan .icon i {
-  color: #3fcdc7;
-}
-
-.services .icon-box-green .icon i {
-  color: #41cf2e;
-}
-
-.services .icon-box-blue .icon i {
-  color: #2282ff;
+  font-family: 'Comic Sans MS', arial;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  
 }
 
 /*--------------------------------------------------------------
