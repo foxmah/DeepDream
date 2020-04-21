@@ -4,10 +4,10 @@ This is deepdream. These are the step to use it on your PC:
  - If you use linux base computer you probably should do these steps:
     - clone or download the project
     - go to file directory
-    - ```
-        cd app/
-        ```
-    - python implement_on_flask.py
+    ```
+    cd app/
+    python implement_on_flask.py
+    ```
     - then run http://localhost:5000/ in your browser
 
 This project was just to improve the "Magnus Erik Hvass Pedersen" tutorial.
