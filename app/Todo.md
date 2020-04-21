@@ -3,4 +3,4 @@
 - [ ] add contect us
 - [X] Add gallery
 - [X] Add faq
-- [ ] add how to run in github
+- [X] add how to run in github
