@@ -5,8 +5,8 @@ This is deepdream. These are the step to use it on your PC:
     - clone or download the project
     - go to file directory
     ```
-    cd app/
-    python implement_on_flask.py
+     $ cd app/
+     $ python implement_on_flask.py
     ```
     - then run http://localhost:5000/ in your browser
 
