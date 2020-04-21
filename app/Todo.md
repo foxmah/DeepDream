@@ -1,4 +1,6 @@
-- [ ] redirect after processing image
+- [X] redirect after processing image
 - [X] put right picture
 - [ ] add contect us
-- [ ] Add gallery
+- [X] Add gallery
+- [X] Add faq
+- [ ] add how to run in github

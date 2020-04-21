@@ -590,7 +590,7 @@ section {
   position: relative;
   overflow: hidden;
   margin: 0;
-  background: #fff;
+  background: rgb(200, 193, 193);
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
   text-align: center;

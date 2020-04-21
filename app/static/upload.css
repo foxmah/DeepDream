@@ -2,6 +2,12 @@
 body{
     background: rgba(0, 0, 0, 0.9);
   }
+  h4 {
+    font-family: 'Comic Sans MS', arial;
+    font-size: 25px;
+    color: rgb(41, 98, 84);
+    text-align: center;
+  }
   form{
     position: absolute;
     top: 50%;
