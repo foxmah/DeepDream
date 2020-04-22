@@ -10,12 +10,10 @@ $ python implement_on_flask.py
 ```
 3. then run http://localhost:5000/ in your browser
 
-This project was just to improve the "Magnus Erik Hvass Pedersen" tutorial.
-So i add a file name video_maker to make video out of frames and probably i will implement it on flask soon.
-
-Magnus Erik Hvass Pedersen :
-# https://github.com/Hvass-Labs/TensorFlow-Tutorials
-# Copyright 2016 by Magnus Erik Hvass Pedersen
+This project was just to improve the "Magnus Erik Hvass Pedersen" tutorial about deepdream.
+So i add a file name video_maker to make video out of frames. and now i'm trying to implement it on flask.
 
 For learning more you can visit :
-# https://www.youtube.com/user/sentdex/
+
+https://github.com/Hvass-Labs/TensorFlow-Tutorials
+https://www.youtube.com/user/sentdex/
