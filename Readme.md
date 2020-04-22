@@ -15,5 +15,5 @@ So i add a file name video_maker to make video out of frames. and now i'm trying
 
 For learning more you can visit :
 
-https://github.com/Hvass-Labs/TensorFlow-Tutorials
-https://www.youtube.com/user/sentdex/
+- https://github.com/Hvass-Labs/TensorFlow-Tutorials
+- https://www.youtube.com/user/sentdex/
