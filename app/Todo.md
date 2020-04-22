@@ -1,9 +1,10 @@
 - [X] redirect after processing image
 - [X] put proper picture
-- [ ] add contect us
+- [X] add contect us
 - [X] Add gallery
 - [X] Add faq
 - [X] add how to run in github
 - [ ] Docker
 - [ ] add style transfer
-- [ ] add proper error template
+- [X] add proper error template
+- [ ] correct footer
