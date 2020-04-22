@@ -4,3 +4,4 @@
 - [X] Add gallery
 - [X] Add faq
 - [X] add how to run in github
+- [ ] Docker
