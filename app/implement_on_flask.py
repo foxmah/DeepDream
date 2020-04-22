@@ -4,7 +4,7 @@ from werkzeug.utils import secure_filename
 from dream_image import processing
 
 UPLOAD_FOLDER = 'static/assets/uploads/'
-ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+ALLOWED_EXTENSIONS = {'png' , 'jpg', 'jpeg'}
 counter = 0
 
 app = Flask(__name__)
@@ -16,7 +16,7 @@ app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 def name_a_file(filename):
     filename = filename.split(".")
     global counter
-    filename = str(counter) + "." + str(filename[1])
+    filename = str(counter) + "." + "jpg"
     counter+=1
     return filename
 
@@ -53,8 +53,18 @@ def uploaded_file(filename):
     Path = os.path.join(app.config['UPLOAD_FOLDER'] , filename)
     processing(str(Path))
     Path = Path.split(".")
-    Path = str(Path[0]) + "_out." + str(Path[1])
+    Path = str(Path[0]) + "_out.jpg"
     return render_template("show_uploaded_file.html" , path=Path)
 
+@app.errorhandler(404)
+def page_not_found(error):
+    """ returns 404 page"""
+    return render_template('404.html'), 404
+
+@app.errorhandler(500)
+def internal_error(error):
+    """ returns 404 page"""
+    return render_template('500.html'), 500
+
 if __name__ == "__main__":
-    app.run("0.0.0.0", 5000, debug=True)
+    app.run("0.0.0.0", 5000)

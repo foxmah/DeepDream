@@ -5,3 +5,5 @@
 - [X] Add faq
 - [X] add how to run in github
 - [ ] Docker
+- [ ] add style transfer
+- [ ] add proper error template

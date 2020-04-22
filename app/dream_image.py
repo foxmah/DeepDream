@@ -41,7 +41,7 @@ def processing(filename):
     img_result = img_result.astype(np.uint8)
     result = PIL.Image.fromarray(img_result, mode='RGB')
     filename = filename.split(".")
-    filename = str(filename[0]) + "_out." + str(filename[1])
+    filename = str(filename[0]) + "_out.jpg"
     result.save(f'{filename}')
     #print("filename: " , filename)
     #result.show()
