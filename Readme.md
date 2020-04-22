@@ -3,7 +3,7 @@ This is deepdream. These are the step to use it on your PC:
 
 You probably should follow these steps whether you use linux or windows:
 1. clone or download the project
-2. go to file directory
+2. go to project directory
 ```
 $ cd app/
 $ python implement_on_flask.py
