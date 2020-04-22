@@ -43,7 +43,7 @@ def processing(filename):
     filename = filename.split(".")
     filename = str(filename[0]) + "_out." + str(filename[1])
     result.save(f'{filename}')
-    print("filename: " , filename)
+    #print("filename: " , filename)
     #result.show()
 
 
