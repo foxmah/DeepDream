@@ -11,7 +11,7 @@ $ python implement_on_flask.py
 3. then run http://localhost:5000/ in your browser
 
 This project was just to improve the "Magnus Erik Hvass Pedersen" tutorial about deepdream.
-So i add a file name video_maker to make video out of frames. and now i'm trying to implement it on flask.
+So i add a file name video_maker to make video out of frames. and a site for GUI.
 
 For learning more you can visit :
 
