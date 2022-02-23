@@ -10,7 +10,7 @@ $ python implement_on_flask.py
 ```
 3. then run http://localhost:5000/ in your browser
 
-This project's purpose was just to improve the "Magnus Erik Hvass Pedersen" tutorial about deepdream.
+This project's purpose was improving the "Magnus Erik Hvass Pedersen" tutorial about deepdream.
 So I added a file named video_maker to make a video out of generated frames and a site for GUI.
 
 For learning more you can visit :
